@@ -8,9 +8,13 @@ add_subdirectory (include)
 add_subdirectory (src)
 
 add_executable(Tutorial ${PUBLIC_SOURCES} ${PUBLIC_HEADERS} prog.cpp)
+# Generates Tutorial.exe
 
-#Exibir ${PUBLIC_HEADERS}
+#add_library(Tutorial ${PUBLIC_SOURCES} ${PUBLIC_HEADERS})
+# Generates Tutorial.lib
+
+#To Show ${PUBLIC_HEADERS}
 #message ( STATUS ${PUBLIC_HEADERS} )
 
-#Exibir ${PUBLIC_SOURCES}
+#To Show ${PUBLIC_SOURCES}
 #message ( STATUS ${PUBLIC_SOURCES} )
